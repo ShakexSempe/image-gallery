@@ -7,8 +7,9 @@
 }
 
 .gallery-highlight{
-    width: 60%;
+    width: 100%;
     height: 80%;
+    object-fit: contain;
 }
 
 section{
@@ -64,16 +65,17 @@ img.active{
 footer{
     position: fixed;
     bottom: 10px;
-    left: 8%;
+    left: 6%;
     color: blanchedalmond;
 }
 footer ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5px auto;
 }
 footer li{
-    margin: 10px;
+    margin: 10px ;
     list-style: none;
     
 }
@@ -94,8 +96,9 @@ footer li{
         font-size: 1rem;
     }
     .gallery-highlight{
-        width: 100%;
         height: 65vh;
+        width: 100%;
+        object-fit: fill;
     }
     .preview{
         width: 100%;
