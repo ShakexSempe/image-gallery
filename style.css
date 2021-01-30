@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.gallery-highlight{
+    width: 60%;
+    height: 80%;
+}
+
+section{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gallery{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #00008b, #000);
+    
+}
+.gallery img{
+    border: 1px solid #e2d2c0;
+}
+.description{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #000, #00008b);
+    font-size: 2.5rem;
+    color: #f0ffff;
+}
+
+.preview{
+    height: 120px;
+    display: flex;
+    width: 100%;
+    border: 1px solid #e2d2c0;
+    overflow-y: hidden;
+}
+
+.preview img{
+    height: 120px;
+    width: 70px;
+    /*flex grow 1 = each child set to an equal size inside the container*/
+    flex-grow: 1;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+img.active{
+    opacity: 1;
+}
+footer{
+    position: fixed;
+    bottom: 10px;
+    left: 8%;
+    color: blanchedalmond;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer li{
+    margin: 10px;
+    list-style: none;
+    
+}
+@media only screen and (max-width:700px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        text-align: center;
+        background-color: black;
+    }
+    .gallery{
+        width: 100%;
+        
+    }
+    .description{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .gallery-highlight{
+        width: 100%;
+        height: 65vh;
+    }
+    .preview{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .preview img{
+        height: 20vh;
+    }
+    footer{
+        position: relative;
+        margin: 5px auto;
+        color: blanchedalmond;
+    }
+    
+}
