@@ -27,16 +27,14 @@ section{
     background: linear-gradient(0deg, rgb(83, 20, 20), rgb(90, 90, 2));
     
 }
-.gallery img{
-    border: 1px solid #e2d2c0;
-}
 .description{
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(0deg, #000, #010166);
+    background: linear-gradient(0deg, rgb(83, 20, 20), rgb(90, 90, 2));
+
     font-size: 2.5rem;
     color: #f0ffff;
 }
@@ -45,7 +43,7 @@ section{
     height: 120px;
     display: flex;
     width: 100%;
-    border: 1px solid #e2d2c0;
+    border: 1px solid #6e502c;
     overflow-y: hidden;
 }
 
